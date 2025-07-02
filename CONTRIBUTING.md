@@ -25,7 +25,7 @@ Each `project` folder should contain:
 - Asset folder (optional)
     - images
 
-*When your repo is complete, you are read to move onto ReDI's Repo to do the next steps*
+*When your repo is complete, you are ready to move onto ReDI's Repo to do the next steps*
 
 ## ✅ Step 2: Clone ReDI School's Main Repository in VS Code Terminal
 On GitHub, click `<> Code` to copy the URL 
@@ -73,6 +73,36 @@ Then push:
     git push -u origin nameofyourbranch
 
 
+## ✅ Step 7: Create a Pull Request from GitHub
+Go to ReDI's Repo : https://github.com/ReDI-Aarhus/Intro-to-Python-GroupProject-Showcase/tree/main
+
+GitHub will usually detect your new branch and show a prompt:
+
+`Compare & pull request`
+
+Click that button.
+
+**OR MANUALLY:**
+
+Click the `Pull Requests` tab
+
+Click `New pull request`
+
+Under base, choose `main`
+
+Under compare, choose your branch
+
+Fill in:
+
+    Title of your choice
+
+    Description of what you did
+
+Click `Create pull request`
+
+
+
+
 # 📌 Best Practices
 
 ## 🔄 Pulling updates from Main to Your Branch
@@ -84,7 +114,7 @@ This fetches changes from the remote main branch
 
     git pull origin main
 
-You've made changes but not yet been pushed to the remote repo. Push the updates to your branch
+You've made changes and commits, but not yet been pushed to the remote repo. Push the updates to your branch
 
     git push -u origin your-branch-name
 
@@ -105,6 +135,6 @@ Always `SAVE` your changes in the file you modified.
 ### ✅ Step 4: Check your branch it is up to date
 Use the following to double check your last commit history and the status of your branch. You can use it before your start and after your push your work. 
 
-    git log
-    git status
+        git status
+        git log
 

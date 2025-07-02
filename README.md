@@ -19,7 +19,6 @@ This is a space to share code and explore other types of projects. Comments are 
 
 ## 📌 Important Note!
 Before adding your submodule, read the following:
-- [CONTRIBUTING.md ](CONTRIBUTING.md)
 - [GUIDLINES.md](GUIDLINES.md)
+- [CONTRIBUTING.md ](CONTRIBUTING.md)
 
-change
