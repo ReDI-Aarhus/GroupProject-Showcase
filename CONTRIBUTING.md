@@ -28,7 +28,8 @@ On GitHub, click `<> Code` to copy the URL
 : https://github.com/ReDI-Aarhus/GroupProject-Showcase.git*
 
 On VS Code, open the Terminal and select the arrow to switch to Git Bash:
-![alt text](commandbash.png)
+
+![alt text](Assets/commandbash.png)
 
 In the Terminal write the following `bash command`:
 
@@ -78,19 +79,18 @@ Go back to ReDI's Repo : https://github.com/ReDI-Aarhus/GroupProject-Showcase.gi
 
 GitHub will usually detect your new branch and show a prompt:
 
-`Compare & pull request`
+Select the prompt. `Compare & pull request`
 
-Click on the prompt.
 
 **OR MANUALLY:**
 
-Click the `Pull Requests` tab
+Select the `Pull Requests` tab at the top of the ReDI Repo on Github
 
-Click `New pull request`
+Select `New pull request`
 
 Under base, choose `main`
 
-Under compare, choose your branch
+Under compare, choose `your branch`
 
 Fill in:
 
@@ -98,7 +98,7 @@ Fill in:
 
     Description of what you did
 
-Click `Create pull request`
+Select `Create pull request`
 
 ## ✅ Step 8: Notify ReDI
 Via Slack, send ReDI a message to Kat to accept your pull request and include the name or your branch.
@@ -139,12 +139,12 @@ Remember filenames are case sensitive. You can add multiple files when necessary
 ### ✅ Step 4: Check your branch it is up to date
 Use the following to double check your last commit history and the status of your branch. You can use it before your start and after your push your work. Read the output carefully
 
-        git status
-        git log
+    git status
+    git log
+
+The status Terminal output could look like this example (below). This example indicates that CONTRIBUTING.md, GUIDLINES.md have been modified, but they are not staged yet. Also, Assets/commandbash.png is also not staged yet. It will be up to you should you need to stage and commit those changes. 
+
+![alt text](Assets/gitstatus.png)
 
 
-![alt text](gitstatus.png)
-
-The status Terminal output could look like this for example. This indicates that CONTRIBUTING.md, GUIDLINES.md have been modified, but they are not staged yet. Also, Assets/commandbash.png is also not staged yet.It will be up to you if you want to start staging and commiting those changes. 
-
-If you are unsure what to do at any stage, please contact Kat to connect you with someone who can support you.
+*If you are unsure what to do at any stage, please contact Kat to connect you with someone who can support you.*
