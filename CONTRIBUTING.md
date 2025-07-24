@@ -21,19 +21,24 @@ Each `project` folder should contain:
 
 *When your repo is complete, you are ready to move onto ReDI's Repo to do the next steps*
 
+<br>
+
 ## ✅ Step 2: Clone ReDI School's Main Repository in VS Code Terminal
 On GitHub, click `<> Code` to copy the URL 
-
-*Hint
+- *Hint
 : https://github.com/ReDI-Aarhus/GroupProject-Showcase.git*
 
-On VS Code, open the Terminal and select the arrow to switch to Git Bash:
+<br>
 
+On VS Code, open the Terminal and select the arrow to switch to Git Bash:
 ![alt text](Assets/commandbash.png)
 
+<br>
 In the Terminal write the following `bash command`:
 
     $ git clone https://github.com/ReDI-Aarhus/GroupProject-Showcase.git
+
+<br>
 
 ## ✅ Step 3: Create a Branch from ReDI's Repo
 
@@ -41,33 +46,35 @@ In the same Terminal create a branch from `main` (e.g., `2025-spring-hangmangame
 
     $ git checkout -b "year-season-projectname-yourname"
     $ git push -u origin year-season-projectname-yourname
+<br>
 
 ## ✅ Step 4: Check your branch on GitHub
 On GitHub, located on the near the top of ReDI's repository page, click the `Branches` tab to confirm that your branch is in ReDI's repository
+
+<br>
 
 ## ✅ Step 5: Add Submodules in Your Branch
 
 Run the following bash command to add the submodule:
 
-    git submodule add <repo-url> Projects/yourrepofoldername
+    git submodule add <repo-url> Courses/CourseName/Projects/yourrepofoldername
 
 *Hint*
 - Copy *your repo-url* into the following command (e.g, `https://github.com/StephSegaW/HangmanGroupProject.git`)
-- specify to your course in the Projects folder
+- locate it in the specific Course and Projects folder
 
 Example
 
-    git submodule add https://github.com/yourusername/repoproject Into-to-Python/Projects/HangmanGroupProject
+    git submodule add https://github.com/yourusername/repoproject Courses/Into-to-Python/Projects/HangmanGroupProject
 
 
 After adding the submodule, Git creates a special file called `.gitmodules` and adds a reference to each submodule.
 
 Write the following commands in bash to stage and commit your work
 
-    git add .gitmodules Projects/yourrepofoldername
+    git add .gitmodules Courses/CourseName/Projects/yourrepofoldername
     git commit -m "Add submodule projectname"
-    git add .gitmodules projects/yourrepofoldername
-    git commit -m "Add submodule projectname"
+
 
 Then push:
 
@@ -77,20 +84,18 @@ Then push:
 ## ✅ Step 7: Create a Pull Request from GitHub
 Go back to ReDI's Repo : https://github.com/ReDI-Aarhus/GroupProject-Showcase.git
 
-GitHub will usually detect your new branch and show a prompt:
+### 2 Options
 
-Select the prompt. `Compare & pull request`
+    1. If GitHub detects your new branch, it will show a prompt: `Compare & pull request`. Then select the prompt.
 
+*Or manually:*
 
-**OR MANUALLY:**
+    2. If it does not detect, select the `Pull Requests` tab at the top of the ReDI Repo on Github. Then select `New pull request`
 
-Select the `Pull Requests` tab at the top of the ReDI Repo on Github
+<br>
 
-Select `New pull request`
-
-Under base, choose `main`
-
-Under compare, choose `your branch`
+Continue under base, choose `main`
+Then under compare, choose `your branch`
 
 Fill in:
 
@@ -103,7 +108,9 @@ Select `Create pull request`
 ## ✅ Step 8: Notify ReDI
 Via Slack, send ReDI a message to Kat to accept your pull request and include the name or your branch.
 
-
+<br>
+<br>
+<br>
 
 # 📌 Extra Best Practices
 
@@ -119,6 +126,7 @@ Push the updates to your branch
 
     git push -u origin your-branch-name
 
+<br>
 
 
 ## 🔄 Saving Changes in Your Branch
