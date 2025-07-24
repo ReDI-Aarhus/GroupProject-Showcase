@@ -19,4 +19,4 @@ Before adding your submodule, read the following:
 ___
 ✨ Take a stroll through our [Courses Folder](Courses) to discover the amazing work of our contributors—each project is neatly organized as a submodule!
 
-💬 We welcome thoughtful, respectful feedback and encourage positive discussion. Feel free to leave comments and join the conversation on any project!
+💬 We welcome thoughtful, respectful feedback and encourage positive discussion. Feel free to leave comments in the discussions tab and join the conversation on any project!
