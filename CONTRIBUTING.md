@@ -1,17 +1,11 @@
 
 # Contributing
-Instructions for students or contributors how add their group project, branching naming rules etc. 
+This document describes how your separate repository should setup on Github and how to create a submodule into ReDI's repository using VS Code, using your separate repository. For more information, refer to [GUIDLINES.md](GUIDLINES.md).
 
-Naming Convention:
-- Repository Folder:
-    - year-season-projectname
-- Branch Name:
-    - year-season-projectname-yourname
-
-*Request ReDI School to be a contributor to this Repo if you haven't been invited yet. Otherwise, you cannot create a branch from this repo*
+*Request ReDI School to be a contributor to this Repo if you haven't been invited yet. Otherwise, you cannot create a branch from ReDI's repo*
 
 
-## ✅ Step 1: Setup Your Own Repository
+## ✅ Step 1: Setup Your Own Repository in GitHub (student repository)
 Folder name is formated to this naming convention: (e.g, `2025-spring-hangmangame` )
     
     year-season-projectname
@@ -21,7 +15,7 @@ Folder name is formated to this naming convention: (e.g, `2025-spring-hangmangam
 Each `project` folder should contain:
 - `README.md`: brief description of the project
     - small intro, goals, features, conclusions
-- `.py`, `jpynb`, `txt` files: Python Code and Text
+-  Source Code Files: `.py`, `.js`, `.jpynb`, `.html` `.txt` etc...
 - Asset folder (optional)
     - images
 
@@ -31,11 +25,14 @@ Each `project` folder should contain:
 On GitHub, click `<> Code` to copy the URL 
 
 *Hint
-: https://github.com/ReDI-Aarhus/Intro-to-Python-GroupProject-Showcase.git*
+: https://github.com/ReDI-Aarhus/GroupProject-Showcase.git*
 
-In VS Code Terminal write the `bash command`:
+On VS Code, open the Terminal and select the arrow to switch to Git Bash:
+![alt text](commandbash.png)
 
-    $ git clone https://github.com/ReDI-Aarhus/Intro-to-Python-GroupProject-Showcase.git
+In the Terminal write the following `bash command`:
+
+    $ git clone https://github.com/ReDI-Aarhus/GroupProject-Showcase.git
 
 ## ✅ Step 3: Create a Branch from ReDI's Repo
 
@@ -45,26 +42,29 @@ In the same Terminal create a branch from `main` (e.g., `2025-spring-hangmangame
     $ git push -u origin year-season-projectname-yourname
 
 ## ✅ Step 4: Check your branch on GitHub
-On GitHub, located on the near the top of ReDI's repository page, click the `Branches` tab to be sure your branch is in the repository
+On GitHub, located on the near the top of ReDI's repository page, click the `Branches` tab to confirm that your branch is in ReDI's repository
 
 ## ✅ Step 5: Add Submodules in Your Branch
-In VS Code Terminal write the `bash command`
 
-    git submodule add <repo-url> projects/yourrepofoldername
+Run the following bash command to add the submodule:
+
+    git submodule add <repo-url> Projects/yourrepofoldername
 
 *Hint*
-- Copy *your repo URL* into the following command (e.g, `https://github.com/StephSegaW/HangmanGroupProject.git`)
-- specify to put it into the Projects folder
+- Copy *your repo-url* into the following command (e.g, `https://github.com/StephSegaW/HangmanGroupProject.git`)
+- specify to your course in the Projects folder
 
 Example
 
-    git submodule add https://github.com/yourusername/repoproject projects/HangmanGroupProject
+    git submodule add https://github.com/yourusername/repoproject Into-to-Python/Projects/HangmanGroupProject
 
-## ✅ Step 6: Commit the Changes
+
 After adding the submodule, Git creates a special file called `.gitmodules` and adds a reference to each submodule.
 
 Write the following commands in bash to stage and commit your work
 
+    git add .gitmodules Projects/yourrepofoldername
+    git commit -m "Add submodule projectname"
     git add .gitmodules projects/yourrepofoldername
     git commit -m "Add submodule projectname"
 
@@ -74,13 +74,13 @@ Then push:
 
 
 ## ✅ Step 7: Create a Pull Request from GitHub
-Go to ReDI's Repo : https://github.com/ReDI-Aarhus/Intro-to-Python-GroupProject-Showcase/tree/main
+Go back to ReDI's Repo : https://github.com/ReDI-Aarhus/GroupProject-Showcase.git
 
 GitHub will usually detect your new branch and show a prompt:
 
 `Compare & pull request`
 
-Click that button.
+Click on the prompt.
 
 **OR MANUALLY:**
 
@@ -100,21 +100,22 @@ Fill in:
 
 Click `Create pull request`
 
+## ✅ Step 8: Notify ReDI
+Via Slack, send ReDI a message to Kat to accept your pull request and include the name or your branch.
 
 
 
-# 📌 Best Practices
+# 📌 Extra Best Practices
 
 ## 🔄 Pulling updates from Main to Your Branch
 Check your branches status compared to main
 
     git status
     
-This fetches changes from the remote main branch
+This fetches changes from the remote main branch and updates your branch
 
     git pull origin main
-
-You've made changes and commits, but not yet been pushed to the remote repo. Push the updates to your branch
+Push the updates to your branch
 
     git push -u origin your-branch-name
 
@@ -127,14 +128,23 @@ You may want to update your repository. You should save your work, stage it (add
 Always `SAVE` your changes in the file you modified. 
 
 ### ✅ Step 2: Stage and Commit your changes
+Remember filenames are case sensitive. You can add multiple files when necessary.
+
     git add filename
-    git commit -m "your comment description"
+    git commit -m "describe what you changed"
+
 ### ✅ Step 3: Push your commits to your branch
     git push -u origin nameofyourbranch
 
 ### ✅ Step 4: Check your branch it is up to date
-Use the following to double check your last commit history and the status of your branch. You can use it before your start and after your push your work. 
+Use the following to double check your last commit history and the status of your branch. You can use it before your start and after your push your work. Read the output carefully
 
         git status
         git log
 
+
+![alt text](gitstatus.png)
+
+The status Terminal output could look like this for example. This indicates that CONTRIBUTING.md, GUIDLINES.md have been modified, but they are not staged yet. Also, Assets/commandbash.png is also not staged yet.It will be up to you if you want to start staging and commiting those changes. 
+
+If you are unsure what to do at any stage, please contact Kat to connect you with someone who can support you.
