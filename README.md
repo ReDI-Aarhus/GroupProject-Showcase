@@ -1,4 +1,4 @@
-# Intro-to-Python-GroupProject-Showcase
+# GroupProject-Showcase
 ![alt text](Assets/redi_banner.png)
 
 *This is a draft how to showcase group projects for S7 students - still in construction*
