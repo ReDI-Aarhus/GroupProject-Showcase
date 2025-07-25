@@ -1,6 +1,6 @@
 ## Folder Structure Example
 
-    Group-Project-Showcase/
+    GroupProject-Showcase/
     ├── .gitmodules
     ├── README.md
     ├── CONTRIBUTING.md
