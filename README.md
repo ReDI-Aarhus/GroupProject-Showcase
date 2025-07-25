@@ -1,8 +1,6 @@
 # GroupProject-Showcase
 ![alt text](Assets/redi_banner.png)
 
-*This is a draft how to showcase group projects for S7 students - still in construction*
-
 ## Introduction:
 Welcome to ReDI School's Group Project Showcase! We are here to celebrate creativity, highlight different approaches to solving problems and inspire new ideas for learning and development. These examples are meant to spark curiosity and help others understand concepts in several foundational codes like Python, Javascript, CSS etc.. They could also cover several topics such as Data Analytics, Advanced Javascript, Cybersecurity and more. 
 
