@@ -13,23 +13,24 @@
         ├── Data-Analytics
         ├── Intro-to-JavaScript
         ├── Advanced-JavaScript
-        ├── UX-UI-Design
-        ├── Intro-to-Cybersecurity
+        ├── Cybersecurity
 
 > **Note:** A [Git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules) is a repository embedded inside another repository. In this structure, each group project is added as a submodule, allowing you to keep your project code separate while linking it to the main showcase repository.
 
 
 ## Naming Convention:
-- Project Folder (inside the student repository):
-    - year-season-projectname
+Project Folder (inside the student's repository):
 
-- Branch Name (inside ReDI repository):
-    - year-season-projectname-yourname
+    year-season-projectname
+
+Branch Name (inside ReDI's repository):
+
+    year-season-projectname-yourname
 
     
 ## Logic Flow
 
-This diagram shows the general structure and workflow for organising group projects in Git and GitHub. ReDI School maintains the `main repository`, while each student or group has their own *separate* project repository on GitHub.
+This diagram shows the general structure and workflow for organising group projects in Git and GitHub. There are 2 repos involved. ReDI School maintains the `main repository` (repo1), while each student or group has their own *separate* project repository (repo2) on GitHub.
 
 ![alt text](Assets/logicmap.PNG)
 
