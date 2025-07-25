@@ -17,6 +17,7 @@
 
 > **Note:** A [Git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules) is a repository embedded inside another repository. In this structure, each group project is added as a submodule, allowing you to keep your project code separate while linking it to the main showcase repository.
 
+<br>
 
 ## Naming Convention:
 Project Folder (inside the student's repository):
@@ -27,6 +28,7 @@ Branch Name (inside ReDI's repository):
 
     year-season-projectname-yourname
 
+<br>
     
 ## Logic Flow
 
